@@ -1,1 +1,2 @@
-
+# :hammer_and_wrench:TERMINAL HUNT:hammer_and_wrench:
+this was very interesting at first, all these new commands and git were new.I still think I have done the push commands wrong , most of the time was spent resolving errors that I was facing in the terminal I almost got frustrated but thanks to our mentor bro he helped me with that.I hope by the time I complete other tasks I will learn from my mistakes ,other than that this was pretty fun task to do.
