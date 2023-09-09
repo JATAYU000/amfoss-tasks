@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.container{
+    padding: 60px 9%;
+    padding-bottom: 100px;
+    padding-top: 140px;
+    padding-right: 400px;
+    padding-left: 400px;
+    
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(270px,1fr));
+    gap: 15px;
+}
+.container .box-container .box{
+    background:linear-gradient(to bottom ,#0B0B21 0% ,#0B0B21 90%,#2BDAE1 90%,#2BDAE1 100%);
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.container .box-container .box img{
+    width: 120px;
+    height: 120px;
+}
+.container .box-container .box h1{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.container .box-container .box p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+
+button{
+    background-color: #2BDAE1;
+    border: none;
+    position:absolute;
+    /*transform: translate(-50%, -50%);*/
+    bottom: 35px;
+    left: 800px;
+    padding: 10px 10px;
+    font-size: 24;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.img-drag{
+    height: 95px;
+    position: absolute;
+    bottom:135px;
+    left:440px;
+    
+
+}
+.h2{
+    font-size: 52;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: absolute;
+    bottom: 240px;
+    left: 800px;
+
+}
+
+.spotify{
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    right: 210px;
+}
+.spotify:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.18);
+}
+
+.youtube{
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    right: 150px;
+}
+
+.youtube:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.18);
+}
+
+
+.twitter{
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    right: 90px;
+}
+.twitter:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.18);
+}
+.insta{
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    right: 30px;
+}
+.insta:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.18);
+}
+.homepage{
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    left: 30px;
+}
+.homepage:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.18);
+}
+
+
+.shop:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.08);
+}
+.socialback{
+    height: 70px;
+    width: 1940px;
+    opacity: 1;
+}
