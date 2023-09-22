@@ -3,4 +3,4 @@
 # GITHUB LINK:
   https://github.com/JATAYU000/jatayu.github.io
 # WEBSITE LINK
-  https://github.com/JATAYU000/jatayu.github.io
+  https://jatayu000.github.io/jatayu.github.io/
