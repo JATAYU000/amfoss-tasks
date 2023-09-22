@@ -1,0 +1,10 @@
+{
+    "name":"Howdy Climate",
+    "description":"Hows your day?",
+    "version":"1.0",
+    "manifest_version":3,
+    "action":{
+        "default_popup":"website.html",
+        "default_icon":"ak47.png"
+    }
+}

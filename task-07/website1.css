@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image:url(wallpaper.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.container-fluid
+{
+    width: 400px;
+    margin: 60px auto;
+    padding: 10px;
+    border-radius: 10px ;
+}
+.inputs 
+{
+
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    opacity: 0.78;
+}
+.inputs input[type="text"] 
+{
+    height: 4rem;
+    width: 20rem;
+    background: #212121;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+    margin-right:4px ;
+}
+.inputs input[type="submit"] 
+{
+    height: 3rem;
+    width: 6rem;
+    background: #0a67ca;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.display 
+{
+    text-align: center;
+    width: 400px;
+    color: #16a864;
+}
+.wrapper 
+{
+    margin: 0 9rem;
+    background-color: white;
+    height: 45vh;
+    margin: 50px auto;
+    border-radius: 2px;
+    opacity: 0.7;
+}
+
+.wrapper h2
+{
+    padding: 5px 0;
+    text-align: center;
+    background: #022c70;
+    color: rgb(170, 225, 246);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.wrapper p
+{
+    margin:20px 50px;
+    margin-right: 20px;
+    text-align: left;
+    color: #09101b;
+    font-size:22px;
+}
+.wrapper h2 span
+{
+    font-size: 24px;
+    color: #9beefb;
+    font-weight: bold;
+}
+.wrapper p span
+{
+    color: #090401;
+    font-size: 22px;
+    font-weight: bold;
+}
+.wrapper img{
+    position: absolute;
+    top:200px;
+    left: 200px;
+}
