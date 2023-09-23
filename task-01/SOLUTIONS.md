@@ -1,4 +1,4 @@
-#Terminal Commands
+# Terminal Commands
 
 ## cd
 Change the current working directory.
@@ -11,7 +11,7 @@ Execute a Python 3 script or open the Python 3 interactive shell.
 ## echo <encoded str> | base64 --decode
 Decode a base64-encoded string and print the result.
 
-#Git Commands
+# Git Commands
 
 ## git clone
 Clone a Git repository from a remote URL to your local machine.
