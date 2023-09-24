@@ -1,0 +1,5 @@
+# AK47 
+
+First,As usual I hit up the internet and learned the basics of creating an extension. I had to make this thing called a 'manifest' file and set up an action that would open an HTML page. Seemed kinda confusing at first, but I got the hang of it.
+I started by making a simple website that had an input box, an output box, and a background. You know, the basic stuff and added an ak47 image as icon. I used some CSS to make it look decent. Then, I stumbled upon someone else's work with the same weather API I wanted to use. They showed how to fetch data in JSON and use this thing called '.innerHTML' to display it on the page. Bam, the extension was starting to take shape.
+But here's where it got tricky. I really wanted to give custom output and background to change based on the weather, like sunny for a sunny day and rainy for a rainy day. I spent like two whole days researching this, and everything I found was way too complex. So, I kinda gave up on that part. But hey, at least I got the basics of the extension working!
