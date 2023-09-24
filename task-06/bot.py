@@ -11,36 +11,6 @@ date = datetime.now().day
 
 url = "https://www.espncricinfo.com/live-cricket-score"
 
-"""
-
-
-soup = BeautifulSoup(response.text, 'html.parser')
-
-live_match = soup.find(class_='ds-flex ds-flex-col ds-mt-2 ds-mb-2')
-text=live_match.text
-
-try:
-    text1=soup.find(class_='ds-text-tight-s ds-font-regular ds-truncate ds-text-typo').text
-except Exception:
-    text1=""
-
-text2=soup.findAll(class_='ci-team-score ds-flex ds-justify-between ds-items-center ds-text-typo ds-my-1')
-
-
-opp = []
-x=0
-for i in text2:
-    x+=1
-    opp.append(i.text)
-    if x==2:break
-
-
-
-with open("scores.csv","a+") as f:
-    wobj=csv.writer(f,delimiter=",")
-    wobj.writerow([opp[0],opp[1],text1,str(date)+"/"+str(month)+"/"+str(year)])
-"""
-
 def run_discord_bot():
     TOKEN = "MTE1MDYzMjA5NDg4NDcwNDI5Nw.GeW_On.BEHhTlv_phv-PrLZ23g8K7uC3NB_0BuHk4OK5Q"
     client = discord.Client(intents=discord.Intents.default())
