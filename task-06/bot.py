@@ -5,11 +5,13 @@ from bs4 import BeautifulSoup
 import datetime
 from datetime import datetime
 
+import scrapper
+
 month = datetime.now().month
 year = datetime.now().year
 date = datetime.now().day
 
-url = "https://www.espncricinfo.com/live-cricket-score"
+
 
 def run_discord_bot():
     TOKEN = "MTE1MDYzMjA5NDg4NDcwNDI5Nw.GeW_On.BEHhTlv_phv-PrLZ23g8K7uC3NB_0BuHk4OK5Q"
@@ -30,38 +32,12 @@ def run_discord_bot():
         print(f"{username} said: {usr_msg} ({channel})")
 
         if usr_msg == "!livescore":
-            response = requests.get(url)
-            soup = BeautifulSoup(response.text, 'html.parser')
-
-            live_match = soup.find(class_='ds-flex ds-flex-col ds-mt-2 ds-mb-2')
-            text=live_match.text
-
-            try:
-                text1=soup.find(class_='ds-text-tight-s ds-font-regular ds-truncate ds-text-typo').text
-            except Exception:
-                text1=""
-
-            text2=soup.findAll(class_='ci-team-score ds-flex ds-justify-between ds-items-center ds-text-typo ds-my-1')
-
-
-            opp = []
-            x=0
-            for i in text2:
-                x+=1
-                opp.append(i.text)
-                if x==2:break
-
-
-
-            with open("scores.csv","a+") as f:
-                wobj=csv.writer(f,delimiter=",")
-                wobj.writerow([opp[0],opp[1],text1,str(date)+"/"+str(month)+"/"+str(year)])
-
-                await msg.channel.send("fetching livescores...")
-                await msg.channel.send(opp[0])
-                await msg.channel.send(opp[1])
-                await msg.channel.send(text1)
-                await msg.channel.send(str(date)+"/"+str(month)+"/"+str(year))
+            opp,text1=scrapper.scrape()
+            await msg.channel.send("fetching livescores...")
+            await msg.channel.send(opp[0])
+            await msg.channel.send(opp[1])
+            await msg.channel.send(text1)
+            await msg.channel.send(str(date)+"/"+str(month)+"/"+str(year))
 
         elif usr_msg == "!csv":
             await msg.channel.send("getting file..")
@@ -73,3 +49,6 @@ def run_discord_bot():
             pass
 
     client.run(TOKEN)
+    
+if __name__=="__main__":
+    run_discord_bot()
