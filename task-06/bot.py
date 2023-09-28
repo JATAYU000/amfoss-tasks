@@ -36,6 +36,12 @@ def run_discord_bot():
             await msg.channel.send("fetching livescores...")
             await msg.channel.send(opp[0])
             await msg.channel.send(opp[1])
+            '''
+            if "won by" in text1:
+                pass
+            else:
+                await msg.channel.send(opp[1])
+                '''
             await msg.channel.send(text1)
             await msg.channel.send(str(date)+"/"+str(month)+"/"+str(year))
 
