@@ -1,4 +1,4 @@
-def generate_pls():
+def generator():
     x = range(100, 1000)
     pls=[]
     for i in x:
@@ -7,13 +7,8 @@ def generate_pls():
             if str(P) == str(P)[::-1]:
                  pls.append(P)
     pls.sort(reverse=True)
-    """
-    first get all combinations prod ,check palindrome,
-    reverse the list for next functions smooth working
-    next function checks num thats less than n since this pls has bigger ans too
-    thats y reversed
-    """
     return pls
+
 
 def find_LP(n, pls):
     for P in pls:
@@ -23,10 +18,9 @@ def find_LP(n, pls):
 
     
 t = int(input().strip())
-pls = generate_pls()
-    
+pls = generator()
 for _ in range(t):
-    n = int(input().strip())#101110
+    n = int(input().strip())
     LP = find_LP(n, pls)
     print(LP)
     

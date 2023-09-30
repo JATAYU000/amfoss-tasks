@@ -17,6 +17,4 @@ for a0 in range(t):
 
 for i in ans:
     print(i)
-""" n found num of numbers divisible by 3,5,15
-    s is the num multiplied resp eg 3 + 6 +9 -> 1+2+3)*3
-    tot add 3 add 5 and subtract one intersection soz repeat of lcm"""
+
